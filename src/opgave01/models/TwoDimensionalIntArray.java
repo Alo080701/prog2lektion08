@@ -62,7 +62,11 @@ på en passende måde.
     }
 
     public void map(IntFunction function) {
-
+        for (int rowindex = 0; rowindex < intArray.length; rowindex++) {
+            for (int column = 0; column < intArray[rowindex].length; column++) {
+                intArray[rowindex][column] = function.apply(intArray[rowindex][column]);
+            }
+        }
     }
 
 

@@ -2,6 +2,8 @@ package opgave01;
 
 import opgave01.models.TwoDimensionalIntArray;
 
+import java.util.Map;
+
 public class Opgave01 {
 
     public static void main(String[] args) {
@@ -18,6 +20,7 @@ public class Opgave01 {
         System.out.println(twoDimensionalIntArray.sumColumn(3));
         System.out.println(twoDimensionalIntArray.sumAll());
         twoDimensionalIntArray.print();
+        twoDimensionalIntArray.map(a -> a/2);
 
     }
 }
