@@ -12,7 +12,17 @@ public class Opgave05 {
                 { 5, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0 }
         };
     Absence absence = new Absence(a);
-
+        //absence.print();
+        System.out.println(absence.totalAbsence(1));
+        System.out.println("--------------");
+        System.out.println(absence.average(1));
+        System.out.println("--------------");
+        System.out.println(absence.StudentsWithoutAbsence());
+        System.out.println("--------------");
+        System.out.println(absence.mostAbsence());
+        System.out.println("--------------");
+        absence.reset(1);
+        System.out.println(absence.totalAbsence(1));
     }
 
 }
